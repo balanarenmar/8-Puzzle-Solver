@@ -3,12 +3,13 @@
 # 8-Puzzle-Solver
 This program asks the user to input unique numbers from 0-8 in a 3x3 grid, that will serve as the input for the 8- puzzle. The program will then utilize IDS and A* search to find the solution, solution path, solution cost, number of nodes expanded, and the running time.
 
+<br>
 
 <img src="assets/ui.png" alt="UI" width="80%">
 
 <img src="assets/worst.png" alt="Astar_worst_mode" width="40%">    <img src="assets/ids_debug.png" alt="Iterative Depth Search debugging" width="45%">
 
-<br><br>
+<br>
 
 ## **Game Modes**
 
@@ -75,7 +76,7 @@ IDS (or IDDFS) is a state space/graph search strategy in which a depth-limited v
 Using IDS on problems that require more than 16 steps is will take an unreasonable long time because there is no optimization to prune repeated states in the search tree.
 *The algorithms in this program could be further optimized to remember, then ignore repeated states (pruning).*
 
-
+<br>
 
 # MEMBERS
 

@@ -8,6 +8,9 @@ This program asks the user to input unique numbers from 0-8 in a 3x3 grid, that 
 
 <img src="assets/worst.png" alt="Astar_worst_mode" width="40%">    <img src="assets/ids_debug.png" alt="Iterative Depth Search debugging" width="45%">
 
+<br><br>
+
+## **Game Modes**
 
 <table>
 <tr><th>Default Goal State </th><th>Easy mode</th></th><th>Medium mode</th></th><th>Hard mode</th></th><th>Worst mode</th></tr>

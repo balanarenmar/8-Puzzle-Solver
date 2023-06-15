@@ -15,11 +15,11 @@ Default Goal State:&nbsp;&nbsp;&nbsp;&nbsp; Easy mode:&nbsp;&nbsp;&nbsp;&nbsp; M
 &emsp; 7 6 5 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 7 _ 5 &emsp;&emsp;&emsp;&emsp; 7 6 5 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 7 5 _ &emsp;&emsp;&emsp;&emsp; 3 2 1 <br>
 
 
-| 1  | 2 | 3 |
+|  |  |  |
 |:--:|:--:|:--:|
-| 4     | 1 | 1 |
-|:--:|:--:|:--:|
-| 7 | 1      |    1 |
+| 1 | 2 | 3 |
+| 8 | `_` | 4 |
+| 7 | 6 | 5 |
 
 
 <br>

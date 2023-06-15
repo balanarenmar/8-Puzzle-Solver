@@ -14,6 +14,14 @@ Default Goal State:&nbsp;&nbsp;&nbsp;&nbsp; Easy mode:&nbsp;&nbsp;&nbsp;&nbsp; M
 &emsp; 8 _ 4 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 8 6 2 &emsp;&emsp;&emsp;&emsp; _ 4 3 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 4 6 3 &emsp;&emsp;&emsp;&emsp; 4 _ 8 <br>
 &emsp; 7 6 5 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 7 _ 5 &emsp;&emsp;&emsp;&emsp; 7 6 5 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 7 5 _ &emsp;&emsp;&emsp;&emsp; 3 2 1 <br>
 
+
+| 1  | 2 | 3 |
+|:--:|:--:|:--:|
+| 4     | 1 | 1 |
+|:--:|:--:|:--:|
+| 7 | 1      |    1 |
+
+
 <br>
 Aside from the pre-set starting configuration of the puzzle, the user can also give their desired starting config.<br>
 Similarly, the user can also provide their own desired goal state to try to reach.<br>

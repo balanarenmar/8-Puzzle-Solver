@@ -73,7 +73,7 @@ Algorithms used:
 IDS (or IDDFS) is a state space/graph search strategy in which a depth-limited version of depth-first search is run repeatedly with increasing depth limits until the goal is found. It isa a graph traversal and path search algorithm, which is used in many fields of computer science due to its completeness, optimality, and optimal efficiency. One major practical drawback is its O(b^d) space complexity, as it stores all generated nodes in memory.
 
 - **A * Search Algorithm**<br>
-A* search algorithm is an informed search algorithm using heuristics (in this case, manhattan distance) to estimate the cost to reach the goal, and making informed decisions based on that cost
+A* search algorithm is an informed search algorithm using heuristics (in this case, manhattan distance) to estimate the cost to reach the goal, and making informed decisions based on that cost. It keeps track of the nodes based on their estimated cost (f-value), where f(n) = g(n) + h(n), g(n) is the cost of the path from the start node to node n, and h(n) is the heuristic estimate of the cost from node n to the goal.
 
 
 Using IDS on problems that require more than 16 steps is will take an unreasonable long time because there is no optimization to prune repeated states in the search tree.
@@ -88,15 +88,15 @@ Using IDS on problems that require more than 16 steps is will take an unreasonab
 | Algorithm | Completeness | Time Complexity | Space Complexity | Optimality |
 |:--:|:--:|:--:|:--:|:--:|
 | IDS | YES (no infinite paths) | *O* **(b^d)** | *O* **(bd)** | Yes **if step cost is constant* |
-| A* | Yes | *O* **(bd)** | *O* **(b^d)** | Yes |
+| A* | Yes | *O* **(b^d)** | *O* **(b^d)** | Yes |
 
 **where b is the average branching factor of the search tree and d is the depth of the goal node.*
 
 <br>
 
-- IDS needs to search until the end of the tree branch. Repeated generation of already explored states makes the time complexity expensive.
+- IDS is a variation of depth-first search (DFS) that addresses the limitations of DFS, such as potentially getting stuck in deep branches and not being able to find a solution within a reasonable time or memory constraint. needs to search until the end of the tree branch. Repeated generation of already explored states makes the time complexity expensive.
 
-- Although A* search is optimal, the space complexity is a drawback because it needs to store all the explored states. In the worst case, where the A* algorithm explores the entire search space, the time complexity of A* search with the Manhattan distance heuristic is exponential.
+- Although A* search is optimal, the space complexity is a drawback because it needs to store all the explored states. In the worst case, where the A* algorithm explores the entire search space, the time complexity of A* search with the Manhattan distance heuristic is exponential. However, in practice, A* search is often much more efficient than the worst-case scenario because of the heuristic function. The Manhattan distance heuristic is admissible, meaning it never overestimates the cost of reaching the goal state. With an admissible heuristic, A* search is guaranteed to find the optimal solution. Additionally, the heuristic helps guide the search towards the goal state, reducing the number of unnecessary states explored.
 
 
 <br>

@@ -9,9 +9,11 @@ This program asks the user to input unique numbers from 0-8 in a 3x3 grid, that 
 
 <img src="assets/worst.png" alt="Astar_worst_mode" width="40%">    <img src="assets/ids_debug.png" alt="Iterative Depth Search debugging" width="45%">
 
+---
+
 <br>
 
-## **Game Modes**
+## **GAME MODES**
 
 <table>
 <tr><th>Default Goal State </th><th>Easy mode</th></th><th>Medium mode</th></th><th>Hard mode</th></th><th>Worst mode</th></tr>
@@ -67,14 +69,33 @@ The program will promptly give a warning if the goal state is impossible to reac
 <br>
 Algorithms used:
 
-- Iterative Deepening Search(IDS)<br>
-A graph traversal and path search algorithm, which is used in many fields of computer science due to its completeness, optimality, and optimal efficiency. One major practical drawback is its O(b^d) space complexity, as it stores all generated nodes in memory.
+- **Iterative Deepening Search(IDS)**<br>
+IDS (or IDDFS) is a state space/graph search strategy in which a depth-limited version of depth-first search is run repeatedly with increasing depth limits until the goal is found. It isa a graph traversal and path search algorithm, which is used in many fields of computer science due to its completeness, optimality, and optimal efficiency. One major practical drawback is its O(b^d) space complexity, as it stores all generated nodes in memory.
 
-- A* Search Algorithm<br>
-IDS (or IDDFS) is a state space/graph search strategy in which a depth-limited version of depth-first search is run repeatedly with increasing depth limits until the goal is found.
+- **A * Search Algorithm**<br>
+A* search algorithm is an informed search algorithm using heuristics (in this case, manhattan distance) to estimate the cost to reach the goal, and making informed decisions based on that cost
+
 
 Using IDS on problems that require more than 16 steps is will take an unreasonable long time because there is no optimization to prune repeated states in the search tree.
 *The algorithms in this program could be further optimized to remember, then ignore repeated states (pruning).*
+
+---
+
+<br>
+
+## **FINDINGS**
+
+| Algorithm | Completeness | Time Complexity | Space Complexity | Optimality |
+|:--:|:--:|:--:|:--:|:--:|
+| IDS | Cross Validation | .862 | .725 | |
+| A* | Hold-out | .844 | .688 | |
+
+<br>
+
+- While IDS 
+
+- A Star search is more e
+
 
 <br>
 

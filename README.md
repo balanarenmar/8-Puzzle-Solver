@@ -69,8 +69,12 @@ The program will promptly give a warning if the goal state is impossible to reac
 <br>
 Algorithms used:
 
+<br><img src="assets/ids.png" alt="IDS pseudocode" width="80%"><br>
+
 - **Iterative Deepening Search(IDS)**<br>
 IDS (or IDDFS) is a state space/graph search strategy in which a depth-limited version of depth-first search is run repeatedly with increasing depth limits until the goal is found. It isa a graph traversal and path search algorithm, which is used in many fields of computer science due to its completeness, optimality, and optimal efficiency. One major practical drawback is its O(b^d) space complexity, as it stores all generated nodes in memory.
+
+<br><img src="assets/astar.png" alt="A* pseudocode" width="80%"><br>
 
 - **A * Search Algorithm**<br>
 A* search algorithm is an informed search algorithm using heuristics (in this case, manhattan distance) to estimate the cost to reach the goal, and making informed decisions based on that cost. It keeps track of the nodes based on their estimated cost (f-value), where f(n) = g(n) + h(n), g(n) is the cost of the path from the start node to node n, and h(n) is the heuristic estimate of the cost from node n to the goal.

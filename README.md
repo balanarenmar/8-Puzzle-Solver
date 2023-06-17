@@ -13,10 +13,24 @@ This program asks the user to input unique numbers from 0-8 in a 3x3 grid, that 
 
 <br>
 
+## **GAME RULES**
+
+|  |  |  |
+|:--:|:--:|:--:|
+|  | ↑ |  |
+| ← | `_` | → |
+|  | ↓ |  |
+
+
+An 8 puzzle is a simple game consisting of a 3 x 3 grid (containing 9 squares). One of the squares is empty. The blank tile can only be moved to the adjacent cells.
+The object is to move to squares around into different positions and having the numbers displayed in the ***"goal state"***.
+
+<br>
+
 ## **GAME MODES**
 
 <table>
-<tr><th>Default Goal State </th><th>Easy mode</th></th><th>Medium mode</th></th><th>Hard mode</th></th><th>Worst mode</th></tr>
+<tr><th>Default Goal State </th><th>[1] Easy mode</th></th><th>[2] Medium mode</th></th><th>[3] Hard mode</th></th><th>[4] Worst mode</th></tr>
 <tr><td>
 
 |  |  |  |
@@ -67,7 +81,21 @@ Similarly, the user can also provide their own desired goal state to try to reac
 The program will promptly give a warning if the goal state is impossible to reach, from the starting position.<br>
 
 <br>
-Algorithms used:
+
+- ## mode [5] - Preferred Initial Configuration
+    - The user may
+
+- ## mode [6] - Preferred Initual & Final State
+    - The user may
+
+- ## mode [7] - Debug mode
+    - The user may
+
+<br>
+
+---
+
+## Algorithms used:
 
 <br><img src="assets/ids.png" alt="IDS pseudocode" width="80%"><br>
 
@@ -98,9 +126,9 @@ Using IDS on problems that require more than 16 steps is will take an unreasonab
 
 <br>
 
-- IDS is a variation of depth-first search (DFS) that addresses the limitations of DFS, such as potentially getting stuck in deep branches and not being able to find a solution within a reasonable time or memory constraint. needs to search until the end of the tree branch. Repeated generation of already explored states makes the time complexity expensive.
+- **IDS** is a variation of depth-first search (DFS) that addresses the limitations of DFS, such as potentially getting stuck in deep branches and not being able to find a solution within a reasonable time or memory constraint. needs to search until the end of the tree branch. Repeated generation of already explored states makes the time complexity expensive.
 
-- Although A* search is optimal, the space complexity is a drawback because it needs to store all the explored states. In the worst case, where the A* algorithm explores the entire search space, the time complexity of A* search with the Manhattan distance heuristic is exponential. However, in practice, A* search is often much more efficient than the worst-case scenario because of the heuristic function. The Manhattan distance heuristic is admissible, meaning it never overestimates the cost of reaching the goal state. With an admissible heuristic, A* search is guaranteed to find the optimal solution. Additionally, the heuristic helps guide the search towards the goal state, reducing the number of unnecessary states explored.
+- Although **A*** search is optimal, the space complexity is a drawback because it needs to store all the explored states. In the worst case, where the A* algorithm explores the entire search space, the time complexity of A* search with the Manhattan distance heuristic is exponential. However, in practice, A* search is often much more efficient than the worst-case scenario because of the heuristic function. The Manhattan distance heuristic is admissible, meaning it never overestimates the cost of reaching the goal state. With an admissible heuristic, A* search is guaranteed to find the optimal solution. Additionally, the heuristic helps guide the search towards the goal state, reducing the number of unnecessary states explored.
 
 
 <br>

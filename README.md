@@ -87,14 +87,16 @@ Using IDS on problems that require more than 16 steps is will take an unreasonab
 
 | Algorithm | Completeness | Time Complexity | Space Complexity | Optimality |
 |:--:|:--:|:--:|:--:|:--:|
-| IDS | Cross Validation | .862 | .725 | |
-| A* | Hold-out | .844 | .688 | |
+| IDS | YES (no infinite paths) | *O* **(b^d)** | *O* **(bd)** | Yes **if step cost is constant* |
+| A* | Yes | *O* **(bd)** | *O* **(b^d)** | Yes |
+
+**where b is the average branching factor of the search tree and d is the depth of the goal node.*
 
 <br>
 
-- While IDS 
+- IDS needs to search until the end of the tree branch. Repeated generation of already explored states makes the time complexity expensive.
 
-- A Star search is more e
+- Although A* search is optimal, the space complexity is a drawback because it needs to store all the explored states. In the worst case, where the A* algorithm explores the entire search space, the time complexity of A* search with the Manhattan distance heuristic is exponential.
 
 
 <br>

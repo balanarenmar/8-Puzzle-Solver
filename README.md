@@ -7,7 +7,7 @@ This program asks the user to input unique numbers from 0-8 in a 3x3 grid, that 
 
 <img src="assets/ui.png" alt="UI" width="80%">
 
-<img src="assets/worst.png" alt="Astar_worst_mode" width="40%">    <img src="assets/ids_debug.png" alt="Iterative Depth Search debugging" width="45%">
+<img src="assets/worst.png" alt="Astar_worst_mode" width="80%"><br>
 
 ---
 
@@ -83,13 +83,14 @@ The program will promptly give a warning if the goal state is impossible to reac
 <br>
 
 - ## mode [5] - Preferred Initial Configuration
-    - The user may
+    - The user shall input
 
 - ## mode [6] - Preferred Initual & Final State
-    - The user may
+    - The user may <br><img src="assets/ids_debug.png" alt="Iterative Depth Search debugging" width="70%"><br>
+
 
 - ## mode [7] - Debug mode
-    - The user may
+    - Additional information about how the algorithm is solving the problem is printed. This helped make sure the program is behaving as intended.<br><img src="assets/ids_debug.png" alt="Iterative Depth Search debugging" width="70%"><br>
 
 <br>
 
@@ -131,7 +132,9 @@ Using IDS on problems that require more than 16 steps is will take an unreasonab
 - Although **A*** search is optimal, the space complexity is a drawback because it needs to store all the explored states. In the worst case, where the A* algorithm explores the entire search space, the time complexity of A* search with the Manhattan distance heuristic is exponential. However, in practice, A* search is often much more efficient than the worst-case scenario because of the heuristic function. The Manhattan distance heuristic is admissible, meaning it never overestimates the cost of reaching the goal state. With an admissible heuristic, A* search is guaranteed to find the optimal solution. Additionally, the heuristic helps guide the search towards the goal state, reducing the number of unnecessary states explored.
 
 
-<br>
+<br><br>
+
+---
 
 # MEMBERS
 

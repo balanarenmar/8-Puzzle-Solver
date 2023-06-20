@@ -83,14 +83,14 @@ The program will promptly give a warning if the goal state is impossible to reac
 <br>
 
 - ## mode [5] - Preferred Initial Configuration
-    - The user shall input
+    - The user shall input the desired Initial state. The program will alert the user if ever the default goal state is impossible to reach when starting from the chosen initial state.u<br><img src="assets/initial.png" alt="" width="70%"><br>
 
-- ## mode [6] - Preferred Initual & Final State
-    - The user may <br><img src="assets/ids_debug.png" alt="Iterative Depth Search debugging" width="70%"><br>
+- ## mode [6] - Preferred Initial & Final State
+    - The user may choose and enter their own desired Initial state, as well as the targe Goal state. The program will alert the user if ever the chosen goal state is impossible to reach when starting from the chosen initial state.<br><img src="assets/goal.png" alt="" width="70%"><br>
 
 
 - ## mode [7] - Debug mode
-    - Additional information about how the algorithm is solving the problem is printed. This helped make sure the program is behaving as intended.<br><img src="assets/ids_debug.png" alt="Iterative Depth Search debugging" width="70%"><br>
+    - Additional information about how the algorithm is solving the problem is printed. This helps make sure the program is behaving as intended, especially during development.<br><img src="assets/ids_debug.png" alt="" width="70%"><br>
 
 <br>
 

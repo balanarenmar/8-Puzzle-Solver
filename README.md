@@ -23,7 +23,7 @@ This program asks the user to input unique numbers from 0-8 in a 3x3 grid, that 
 
 
 An 8 puzzle is a simple game consisting of a 3 x 3 grid (containing 9 squares). One of the squares is empty. The blank tile can only be moved to the adjacent cells.
-The object is to move to squares around into different positions and having the numbers displayed in the ***"goal state"***.
+The objective is to move the empty square around into different positions and reaching the state of the numbers as displayed in the ***"goal state"***.
 
 <br>
 
